@@ -1,0 +1,246 @@
+:root
+{
+    --fondo-color:rgb(236, 253, 255);
+    --regla-color:#A0C5CA;
+    --comenzar-color:#2D7680;
+    --footer-color:#657C80;
+    --footer-final-color:rgb(42, 52, 53);
+    --btn-color:rgb(64, 141, 151);
+
+    --header-font:'Amaranth', sans-serif;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: var(--fondo-color);
+    font-family: 'Manrope', sans-serif;
+}
+.header
+{
+    height: 100vh;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+/*MEDIAAAAA XXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@media (min-width:700px){
+    .header
+    {
+        height: auto;
+    }
+}
+.header__title
+{
+
+    padding-top: 32px;
+
+    font-family: var(--header-font);
+    text-transform: uppercase;
+    font-size: 3.5rem;
+
+    color: rgb(7, 43, 58);
+    
+}
+/*ESTILOS PARA TABLET Y PHONE Pxxxxxxxxxxxxxxxx*/
+@media (min-width:700px){
+    .header__title
+    {
+        letter-spacing: 9pt;
+    }
+}
+/*ESTILOS PARA COMPUTADORAS  Pxxxxxxxxxxxxxxxx*/
+@media (min-width:1300px){
+    .header__title
+    {
+        letter-spacing: 15pt;
+    }
+}
+.header__img
+{
+    width: 100%;
+    margin-top: 8%;
+    padding: 0;
+}
+
+/*ESTILOS PARA TABLET Y PHONE Pxxxxxxxxxxxxxxxx*/
+@media (min-width:700px){
+    .header__img
+    {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        max-width: 50%;
+    }
+}
+
+/*EXPLICACION ------------------------------------*/
+.regla
+{
+    height: 70vh;
+    padding: 20px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--regla-color);
+}
+.regla__titulo
+{
+    margin-bottom: 45px;
+
+    font-size: 3rem;
+
+    color: rgb(5, 59, 68);
+    
+}
+
+.regla__texto
+{
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+
+/*COMENZARR EL JUEGOOO---------------------------*/
+.comenzar{
+    height: 59vh;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    background-color: var(--comenzar-color);
+    
+}
+.regla__titulo--comenzar
+{
+
+    margin-bottom:  5%;
+    color: rgb(225, 239, 241);
+}
+.comenzar__link
+{
+    padding: 20px;
+
+    border-radius: 10px;
+    border: 2px solid white;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1pt;
+    color: white;
+
+    transition: all 0.4s;
+
+}
+.comenzar__link:hover
+{
+    background: white;
+    color: rgba(0, 0, 0, 0.8);
+
+    font-size: 1.2rem;
+}
+
+
+
+/*FOOTER--------------------------------------------------*/
+.footer
+{
+    height: 35vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: var(--footer-color);
+}
+.footer__redes-sociales
+{
+    height: 87%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+/*ESTILOS PARA TABLET Y PHONE Pxxxxxxxxxxxxxxxx*/
+@media (min-width:700px){
+    .footer__redes-sociales
+    {
+        flex-direction: row;
+    }
+
+}
+.footer__red-social
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(226, 238, 247);
+}
+/*ESTILOS PARA TABLET Y PHONE Pxxxxxxxxxxxxxxxx*/
+@media (min-width:700px){
+    .footer__red-social--icon1
+    {
+        margin-right: 50px;
+    }
+    
+}
+.footer__red-social i
+{
+    margin-right: 25px;
+    font-size: 300%;
+    
+}
+.footer__red-social a
+{
+    text-decoration: none;
+
+    color: rgb(226, 238, 247);
+
+    transition: all 0.4s;
+}
+.footer__red-social:hover a
+{
+    color: white;
+    font-size: 80%;
+}
+.footer__red-social:hover i
+{
+    color: white;
+}
+.footer__final
+{
+    display: flex;
+    align-items: center;
+
+    height: 13%;
+    padding: 6px;
+
+    font-weight: 100;
+    font-size: 70%;
+    background: var(--footer-final-color);
+    color: white;
+}
+.footer__span
+{
+
+    border-left: 1.5px solid black;
+    padding-left: 6px;
+    margin-left: 5px;
+
+    text-transform: uppercase;
+}
