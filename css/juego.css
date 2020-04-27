@@ -1,0 +1,249 @@
+body
+{
+    font-family: 'Manrope', sans-serif;
+
+}
+.header
+{
+    text-align: center;
+    background-color: var(--fondo-color);
+}
+/*MEDIAAAAA XXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@media (min-width:700px){
+    .header
+    {
+        height: auto;
+    }
+}
+.header__title
+{
+    padding-bottom: 65px;
+    padding-top: 65px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+
+    color: rgb(7, 43, 58);
+
+    text-shadow: 0 0 2.2px rgb(65, 84, 87);
+
+}
+
+
+/*CONTENT PART -------------------------------------------*/
+.content
+{
+    display: grid;
+    grid-template-columns: 1fr repeat(6,minmax(50px,150px)) 1fr;
+    grid-auto-rows: 1fr;
+    row-gap: 20px;
+
+    padding-bottom: 20px;
+
+    height: 100vh;
+    justify-content: center;
+
+    background-color: var(--regla-color);
+
+}
+.content__title
+{
+    grid-column-start: 3;
+    grid-column: span 8;
+    align-self: end;
+
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bolder;
+
+    font-family: 'Bangers', cursive;
+    letter-spacing: 5pt;
+    color: rgb(254, 255, 255);
+
+    text-shadow: 0 0 15px rgb(4, 44, 44);
+}
+/*TEXTAREAAAAAAAAAAAAAAAAAAAA-----------------------------------*/
+.textarea
+{
+    position: relative;
+    grid-column: 2/ span 6;
+    grid-row: 2/span 1;
+
+    padding: 0 10% 0 10%;    
+
+}
+.textarea__texto
+{
+
+    resize: none;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 80%;
+    min-height: 80%;
+
+    border-radius: 17px 34px 51px 8.5px;
+
+    outline: none;
+
+    padding: 10px;
+
+    font-size: 40px;
+    
+    border: 6px solid rgb(65, 84, 87);
+
+    box-shadow: 0 0 10px rgb(65, 84, 87);
+    transition: all 0.3s;
+
+}
+
+.textarea__texto:focus
+{
+    border: 2.5px solid rgb(100, 126, 131);
+
+}
+
+
+.textarea::after
+{
+    opacity: 0.7;
+
+    position: absolute;
+    content: '';
+    
+    height: 15px;
+    width: 10%;
+
+    top: 15%;
+    right: 0;
+    left: 76.6%;
+    bottom: 0;
+
+    background: url(../cuatro.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    
+}
+/*PROTOTIPO DE BOTONES-----------------------------------------------*/
+.content__boton
+{
+    background-color: var(--comenzar-color);
+    border: 8px solid rgb(65, 84, 87);
+    color: white;
+    cursor: pointer;
+    outline: none;
+
+    box-shadow: 0 0 5px rgb(13, 48, 48);
+
+    transition: all 0.3s;
+}
+.content__boton:hover
+{
+    border: 4px solid rgb(203, 219, 221);
+}
+/*BOTOENESSSSSSSSSS DE OPERACIONES-----------------------------------*/
+.content__botones
+{
+    grid-column: 6/span 2;
+    grid-row: 3/span 4;
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*ESTILOS PARA TABLET Y COMPUTADORA Pxxxxxxxxxxxxxxxx*/
+@media (min-width:768px){
+    .content__botones
+    {
+        grid-column: 6/span 3;
+    }
+}
+.content__boton--operaciones
+{
+    padding: 17px;
+
+    border-radius: 150px 150px 40px 40px;
+
+    background-color: rgb(204, 87, 87);
+}
+.content__boton--operaciones i
+{
+    font-size: 37px;
+}
+/*BOTON DEL NUMERO 4-----------------------------------*/
+.four-btn
+{
+    grid-column: 4/span 2;
+    grid-row: 3/span 3;
+    display: flex;
+    align-items: center;
+}
+.content__boton--four
+{
+    width: 100%;
+    height: 85%;
+
+    border-radius: 45px/15px;
+    
+    background: url(../cuatro_blanco.svg);
+    background-color: rgb(159, 85, 202);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/*SUBMIT-----------------------------------*/
+.submit
+{
+    grid-column: 2/span 2;
+    grid-row: 3/span 4;
+    justify-self: center;
+
+}
+.content__boton--submit
+{
+    height: 100%;
+    width: 95px;
+
+    text-transform: uppercase;
+
+    border-radius: 150px 150px 40px 40px;
+    
+    
+    background-color: rgb(94, 112, 173);
+}
+/*ESTILOS PARA TABLET Y COMPUTADORA Pxxxxxxxxxxxxxxxx*/
+    @media (min-width:768px){
+        .submit
+        {
+            grid-column: 1/span 3;
+        }
+    }
+.content__boton--submit span  /*HACER EL TEXTO VERTICAL--------*/
+{
+    display: block;
+    box-sizing: border-box;        
+    margin: 30px 0 30px 0;
+
+    font-size: 1.8rem;
+    font-weight: bolder;
+
+    text-shadow: 0 0 0 rgb(100, 126, 131);
+}
+
+/*EMPEZAR JUEGOOOOOOOOOOOO-----------------------------------*/
+.empezar
+{
+    grid-column: 4/span 2;
+    grid-row: 6/span 1;
+}
+.content__boton--empezar
+{
+    width: 100%;
+    height: 80%;
+
+    border-radius: 15px;
+    text-transform: uppercase;
+
+    font-weight: bolder;
+    letter-spacing: 1.2pt;
+}

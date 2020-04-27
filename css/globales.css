@@ -1,0 +1,18 @@
+:root
+{
+    --fondo-color:rgb(236, 253, 255);
+    --regla-color:#A0C5CA;
+    --comenzar-color:#2D7680;
+    --footer-color:#657C80;
+    --footer-final-color:rgb(42, 52, 53);
+    --btn-color:rgb(64, 141, 151);
+
+    --header-font:'Amaranth', sans-serif;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
