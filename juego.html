@@ -17,36 +17,37 @@
         <header class="header">
             <h1 class="header__title">Los cuatro cuatros</h1>
         </header>
-        <section class="content">
-            <h2 class="content__title">Nivel: <span>1</span></h2>
+        <section class="content" id="content">
+            <h2 class="content__title">Nivel: <span id="num">0</span></h2>
             <div class="textarea">
-                <textarea class="textarea__texto" placeholder=" "></textarea>
+                <div class="textarea__texto" placeholder=" " id="textArea"></div>
                 <div></div>
             </div>
             
             <div class="content__botones">
-                <button class="content__boton content__boton--operaciones"><i class="fas fa-plus"></i></button>
-                <button class="content__boton content__boton--operaciones"><i class="fas fa-minus"></i></button>
-                <button class="content__boton content__boton--operaciones"><i class="fas fa-times"></i></button>
-                <button class="content__boton content__boton--operaciones"><i class="fas fa-divide"></i></button>
+                <button class="content__boton content__boton--operaciones" data-operacion="suma"><i class="fas fa-plus" data-operacion="suma"></i></button>
+                <button class="content__boton content__boton--operaciones" data-operacion="resta"><i class="fas fa-minus" data-operacion="resta"></i></button>
+                <button class="content__boton content__boton--operaciones" data-operacion="multiplicacion"><i class="fas fa-times" data-operacion="multiplicacion"></i></button>
+                <button class="content__boton content__boton--operaciones" data-operacion="division"><i class="fas fa-divide" data-operacion="division"></i></button>
             </div>
             <div class="four-btn">
-                <button class="content__boton content__boton--four"></button>
+                <button class="content__boton content__boton--four" data-num="cuatro"></button>
             </div>
             <div class="submit">
-                <button class="content__boton content__boton--submit">
-                    <span>P</span>
-                    <span>r</span>
-                    <span>o</span>
-                    <span>b</span>
-                    <span>a</span>
-                    <span>r</span>
+                <button class="content__boton content__boton--submit" data-probar="probar" id="probar">
+                    <span data-probar="probar" >P</span>
+                    <span data-probar="probar" >r</span>
+                    <span data-probar="probar" >o</span>
+                    <span data-probar="probar" >b</span>
+                    <span data-probar="probar" >a</span>
+                    <span data-probar="probar" >r</span>
                 </button>
             </div>
-            <div class="empezar">
-                <button class="content__boton content__boton--empezar">Comenzar</button>
+            <div class="empezar"">
+                <button class="content__boton content__boton--empezar" id="btnComenzar">Comenzar</button>
             </div>
         </section>
     </div>
+    <script src="./juego.js"></script>
 </body>
 </html>
