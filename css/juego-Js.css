@@ -1,0 +1,63 @@
+/*ESTILOSSSSSSS PARA JAVASCPT*/
+.hide
+{
+    display: none;
+}
+.content__boton--borrar
+{
+    grid-column: 4/span 2;
+    grid-row: 6/span 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: 3pt;
+
+    border-radius: 15px;
+}
+/*ESTILOS PARA COMPUTADORA Pxxxxxxxxxxxxxxxx*/
+@media (min-width: 1200px){
+    .content__boton--borrar{
+        grid-column: 3/span 4;
+    }
+}
+.content__boton--parentesis-Izquierdo{
+    grid-column: 4/span 1;
+    grid-row: 5/span 1;
+    background-color: var(--btnParentesis-color);
+}
+/*ESTILOS PARA COMPUTADORA Pxxxxxxxxxxxxxxxx*/
+@media (min-width: 1200px){
+    .content__boton--parentesis-Izquierdo{
+        grid-column: 3/span 2;
+    }
+}
+.content__boton--parentesis-Derecho{
+    grid-column: 5/span 1;
+    grid-row: 5/span 1;
+    background-color: var(--btnParentesis-color);
+}
+/*ESTILOS PARA COMPUTADORA Pxxxxxxxxxxxxxxxx*/
+@media (min-width: 1200px){
+    .content__boton--parentesis-Derecho{
+        grid-column: 5/span 2;
+    }
+}
+.info
+{
+    grid-column: 2/span 2 !important;
+    grid-row: 1/span 1 !important;
+    justify-self: center !important;
+    align-self: end !important;
+
+    cursor: pointer;
+    outline: none;
+
+
+    background: transparent;
+    border: none;
+    font-size: 35px;
+
+    color: white;
+}

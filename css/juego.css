@@ -49,8 +49,8 @@ body
 }
 .content__title
 {
-    grid-column-start: 3;
-    grid-column: span 8;
+    grid-column: 1/span 8;
+    grid-row: 1/span 1;
     align-self: end;
 
     text-align: center;
@@ -85,10 +85,11 @@ body
     border-radius: 17px 34px 51px 8.5px;
 
     outline: none;
+    overflow: hidden;
 
     background-color: white;
 
-    padding: 10px;
+    padding: 4.2px;
 
     font-size: 40px;
     
@@ -135,6 +136,8 @@ body
     cursor: pointer;
     outline: none;
 
+    font-size: 23px;
+    font-weight: bolder;
     box-shadow: 0 0 5px rgb(13, 48, 48);
 
     transition: all 0.3s;
@@ -180,6 +183,12 @@ body
     grid-row: 3/span 3;
     display: flex;
     align-items: center;
+}
+/*ESTILOS PARA COMPUTADORA Pxxxxxxxxxxxxxxxx*/
+@media (min-width: 1200px){
+    .four-btn{
+        grid-column: 3/span 4;
+    }
 }
 .content__boton--four
 {
@@ -246,26 +255,7 @@ body
     border-radius: 15px;
     text-transform: uppercase;
 
+    font-size: 16px;
     font-weight: bolder;
     letter-spacing: 1.2pt;
-}
-
-
-/*ESTILOSSSSSSS PARA JAVASCPT*/
-.hide
-{
-    display: none;
-}
-.content__boton--borrar
-{
-    grid-column: 4/span 2;
-    grid-row: 6/span 1;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    letter-spacing: 3pt;
-
-    border-radius: 15px;
 }
