@@ -108,7 +108,7 @@ class Juego{
     }
     
     generarNiveles(){
-        this.numeroDeNiveles = 1;
+        this.numeroDeNiveles = 10;
         this.niveles=[];
         for(let i=0;i<this.numeroDeNiveles;i++){
             this.niveles[i] = i+1;
